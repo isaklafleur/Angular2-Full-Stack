@@ -14,5 +14,9 @@ import { MessageComponent } from "./messsages/message.component";
     bootstrap: [AppComponent]
 })
 export class AppModule {
+<<<<<<< Updated upstream
 
+=======
+       
+>>>>>>> Stashed changes
 }
