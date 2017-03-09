@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-logout',
@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
     `
 })
 export class LogoutComponent {
-
     onLogout() {
 
     }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-header',
@@ -7,14 +7,12 @@ import { Component, OnInit } from '@angular/core';
             <nav class="col-md-8 col-md-offset-2">
                 <ul class="nav nav-pills">
                     <li routerLinkActive="active"><a [routerLink]="['/messages']">Messenger</a></li>
-                    <li routerLinkActive="active"><a [routerLink]="['/auth']">Authenticaion</a></li>
+                    <li routerLinkActive="active"><a [routerLink]="['/auth']">Authentication</a></li>
                 </ul>
             </nav>
-        </header>    
+        </header>
     `
 })
-export class HeaderComponent implements OnInit {
-    constructor() { }
+export class HeaderComponent {
 
-    ngOnInit() { }
 }

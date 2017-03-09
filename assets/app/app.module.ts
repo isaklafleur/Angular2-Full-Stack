@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { MessageComponent } from "./messsages/message.component";
-import { MessageListComponent } from './messsages/message-list.component';
-import { MessageInputComponent } from './messsages/message-input.component';
-import { MessagesComponent } from './messsages/messages.component';
-import { AuthenticationComponent } from './auth/authentication.component';
-import { HeaderComponent } from './header.component';
-import { routing } from './app.routing';
-import { LogoutComponent } from './auth/logout.component';
-import { SigninComponent } from './auth/signin.component';
-import { SignupComponent } from './auth/signup.component';
+import { MessageComponent } from "./messages/message.component";
+import { MessageListComponent } from "./messages/message-list.component";
+import { MessageInputComponent } from "./messages/message-input.component";
+import { MessagesComponent } from "./messages/messages.component";
+import { AuthenticationComponent } from "./auth/authentication.component";
+import { HeaderComponent } from "./header.component";
+import { routing } from "./app.routing";
+import { LogoutComponent } from "./auth/logout.component";
+import { SignupComponent } from "./auth/signup.component";
+import { SigninComponent } from "./auth/signin.component";
 
 @NgModule({
     declarations: [
@@ -24,11 +24,12 @@ import { SignupComponent } from './auth/signup.component';
         AuthenticationComponent,
         HeaderComponent,
         LogoutComponent,
-        SigninComponent,
-        SignupComponent
+        SignupComponent,
+        SigninComponent
     ],
     imports: [BrowserModule, FormsModule, routing, ReactiveFormsModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }
