@@ -1,9 +1,6 @@
 
 <div class="col-md-8 col-md-offset-2">
-    
-    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" action="" method="" role="form">
-        <legend>Form title</legend>
-    
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="firstName">First Name</label>
             <input 
@@ -21,9 +18,9 @@
                     formControlName="lastName">
         </div>
         <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Mail</label>
             <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     id="email"
                     formControlName="email">
@@ -36,6 +33,9 @@
                     id="password"
                     formControlName="password">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button
+                type="submit"
+                class="btn btn-primary"
+                [disabled]="!myForm.valid">Submit</button>
     </form>
 </div>
