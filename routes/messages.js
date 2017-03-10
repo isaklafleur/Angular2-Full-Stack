@@ -18,7 +18,6 @@ router.post('/', function(req, res, next) {
             message: 'Saved message',
             obj: result
         });
-
     });
 });
 
